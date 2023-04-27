@@ -1,5 +1,7 @@
 let currentIndex = 0
 
+document.getElementsByTagName('h3')[0].onclick = () => { getPlanets() }
+
 function getPlanets() {
     fetch("../planets/planets.json").then(function (response) {
         return response.json()
@@ -59,5 +61,3 @@ function getPlanets() {
         })
     })
 }
-
-getPlanets()
