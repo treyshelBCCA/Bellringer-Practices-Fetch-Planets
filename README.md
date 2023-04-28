@@ -19,4 +19,4 @@ Run the html from your live server. You won't see much on the page yet. Open you
 Hints and tips:
 
 - Use the .json() method on your response to see more of the data in the console: What data type do you see printed?
-- Peek at the response returned in the request by adding a print statement inside of the function.
+- Peek at the response returned in the request by adding a 'console.log()' inside of the function.
