@@ -8,12 +8,12 @@ getPlanets().catch(function (error) {
 async function getPlanets() {
     const data =  (await fetch("../planets/planets.json"));
     const obj = await data.json();
-    //grab h1 and h3
-    const header = document.querySelector("h1");
+    //grab h3
+    
     const planet = document.querySelector("h3");
 
     //create event listener for clickable header
-    header.addEventListener("click", clickEvent);
+    planet.addEventListener("click", clickEvent);
     //declare preset variables so they show correctly on screen (counter, current planet name, create image and set it with current planet)
     let i = 0;
     planet.textContent = "Planet " + obj[i].name;
